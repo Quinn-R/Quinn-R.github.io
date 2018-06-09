@@ -1,19 +1,28 @@
 var menuOpen = 0;
-var menuOpenSize = 100, menuContentOpenSize = 90;
-var menuCloseSize = 10, menuContentCloseSize = 0;
+var wrapperSize = 0, menuClickSize = 0;
+var menuOpenSize = 400, menuContentOpenSize = 0;
+var menuCloseSize = 80, menuContentCloseSize = 0;
 var result = "";
 
 function menuSize()
 {
+	
+	
 	if(menuOpen == 0)
 	{
 		menuOpen = 1;
 		
-		result = menuOpenSize + "vw";
+		result = menuOpenSize + "px";
 		
-		document.getElementById('menu').style.width= result;
+		document.getElementById('menu').style.width = result;
 		
-		result = menuContentOpenSize + "vw";
+		wrapperSize = document.getElementById("menu"); 
+		menuClickSize = document.getElementById("menuClick");
+		//alert(wrapperSize);
+		menuContentOpenSize = wrapperSize.offsetWidth - menuClickSize.offsetWidth;
+		//alert(menuContentOpenSize);
+		
+		result = menuContentOpenSize + "px";
 		
 		document.getElementById('menuContent').style.width = result;
 	}
@@ -21,11 +30,11 @@ function menuSize()
 	{
 		menuOpen = 0;
 		
-		result = menuCloseSize + "vw";
+		result = menuCloseSize + "px";
 		
 		document.getElementById('menu').style.width = result;
 		
-		result = menuContentCloseSize + "vw";
+		result = menuContentCloseSize + "px";
 		
 		document.getElementById('menuContent').style.width = result;
 	}
