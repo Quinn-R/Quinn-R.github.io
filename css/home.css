@@ -44,6 +44,16 @@ p
     margin: 0;
 }
 
+.menuBuffer
+{
+    background-color: pink;
+    
+    height: 40%;
+    width: 100%;
+    
+    float: left;
+}
+
 #wrapper
 {
     z-index: 1;
@@ -51,7 +61,8 @@ p
 
 #menu
 {
-    background-color: yellow;
+    background-color: transparent;
+    //Visibility: hidden;
     
     width: 10vw;
     z-index: 2;
@@ -61,6 +72,8 @@ p
 
 #menuContent
 {
+    background-color: green;
+    
     width: 0vw;
     z-index: 3;
     
@@ -69,14 +82,15 @@ p
 
 #menuClick
 {
-    background-color: blue;
+    background-color: grey;
     
     width: 10vw;
+    height: 20%;
     z-index: 3;
     
     float: right;
     
-    opacity: 0.5;
+    opacity: 1;
 }
 
 /*
