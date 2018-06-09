@@ -1,7 +1,7 @@
 var menuOpen = 0;
 var wrapperSize = 0, menuClickSize = 0;
 var menuOpenSize = 400, menuContentOpenSize = 0;
-var menuCloseSize = 80, menuContentCloseSize = 0;
+var menuCloseSize = 5, menuContentCloseSize = 0;
 var result = "";
 
 function menuSize()
@@ -30,7 +30,7 @@ function menuSize()
 	{
 		menuOpen = 0;
 		
-		result = menuCloseSize + "px";
+		result = menuCloseSize + "vw";
 		
 		document.getElementById('menu').style.width = result;
 		
