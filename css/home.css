@@ -48,7 +48,7 @@ p
 {
     background-color: transparent;
     
-    height: 45vh;
+    height: 40vh;
     width: 5vw;
     max-width: 50px;
     
@@ -63,7 +63,7 @@ p
 
 .menuContent1
 {
-    background-color: pink;
+    background-color: white;
     
     height: 50px;
     min-width: 100%;
@@ -71,6 +71,9 @@ p
     border: 0;
     padding: 0;
     margin: 0;
+    
+    //border-top: 0.5px solid grey;
+    border-bottom: 0.5px solid grey;
 }
 
 .menuContent2
@@ -89,6 +92,8 @@ p
 
 #wrapper
 {
+    background-color: white;
+    
     z-index: 1;
     
     border: 0;
@@ -114,7 +119,7 @@ p
 
 #menuContent
 {
-    background-color: green;
+    background-color: white;
     
     width: 0vw;
     z-index: 3;
@@ -126,6 +131,8 @@ p
     border: 0;
     padding: 0;
     margin: 0;
+    
+    box-shadow: 4px 4px 4px grey;
 }
 
 #menuClick
@@ -134,8 +141,9 @@ p
     
     width: 5vw;
     max-width: 50px;
-    height: 10vw;
+    height: 20vh;
     z-index: 3;
+    
     border-radius: 0px 15px 15px 0px;
     
     float: right;
@@ -145,6 +153,13 @@ p
     padding: 0;
     margin: 0;
 }
+
+/*
+#contact
+{
+    //border-bottom: 1px solid grey;
+}
+*/
 
 /*
 
