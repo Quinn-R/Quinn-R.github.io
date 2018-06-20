@@ -1,6 +1,7 @@
 var menuOpen = 0;
 var wrapperSize = 0, menuClickSize = 0;
 var menuOpenSize = 400, menuContentOpenSize = 0;
+var menuMaxWidth = 50;
 var menuCloseSize = 5, menuContentCloseSize = 0;
 var result = "";
 
@@ -14,6 +15,7 @@ function menuSize()
 		
 		result = menuOpenSize + "px";
 		
+        document.getElementById('menu').style.maxWidth = result;
 		document.getElementById('menu').style.width = result;
 		
 		wrapperSize = document.getElementById("menu"); 
@@ -32,6 +34,7 @@ function menuSize()
 		
 		result = menuCloseSize + "vw";
 		
+        document.getElementById('menu').style.maxWidth = menuMaxWidth + "px";
 		document.getElementById('menu').style.width = result;
 		
 		result = menuContentCloseSize + "px";

@@ -46,14 +46,15 @@ p
 
 .menuBuffer
 {
-    background-color: pink;
+    background-color: transparent;
     
-    height: 45vw;
+    height: 45vh;
     width: 5vw;
+    max-width: 50px;
     
     float: right;
     
-    opacity: 0;
+    opacity: 1;
     
     border: 0;
     padding: 0;
@@ -101,6 +102,7 @@ p
     //Visibility: hidden;
     
     width: 5vw;
+    max-width: 50px;
     z-index: 2;
     
     position: fixed;
@@ -119,7 +121,7 @@ p
     
     float: left;
     
-    overflow: scroll;
+    overflow: auto;
     
     border: 0;
     padding: 0;
@@ -131,9 +133,10 @@ p
     background-color: grey;
     
     width: 5vw;
+    max-width: 50px;
     height: 10vw;
     z-index: 3;
-    border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 15px 15px 0px;
     
     float: right;
     
